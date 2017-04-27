@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import Header from '../components/Header';
-import MainBody from '../components/MainBody';
-import * as TodoActions from '../actions';
+import { Header, MainBody } from '../components/Todo';
+import * as TodoActions from '../actions/todoActions';
 
 class Todo extends Component {
     render(){

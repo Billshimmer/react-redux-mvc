@@ -1,4 +1,4 @@
-import { ADD_TODO, DELETE_TODO } from '../constants/ActionTypes.js';
+import { ADD_TODO, DELETE_TODO } from '../constants/TodoActionTypes.js';
 
 const InitialState = [
     {
