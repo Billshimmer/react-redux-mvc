@@ -16,6 +16,8 @@
   "devDependencies": {
     "enzyme": "^2.8.0",
     "react-addons-test-utils": "^15.3.0",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
     "react-scripts": "^0.9.5"
   },
   "dependencies": {

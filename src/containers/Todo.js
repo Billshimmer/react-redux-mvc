@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import MainBody from '../components/MainBody';
 import * as TodoActions from '../actions';
 
-class App extends Component {
+class Todo extends Component {
     render(){
         let { todos, actions } = this.props
 
@@ -21,7 +21,7 @@ class App extends Component {
     };
 }
 
-App.propTypes = {
+Todo.propTypes = {
     todos: PropTypes.array.isRequired,
     actions: PropTypes.object.isRequired,
 };
@@ -34,4 +34,4 @@ const mapDispatchToProps = dispatch => ({
     actions: bindActionCreators(TodoActions, dispatch),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(Todo);
