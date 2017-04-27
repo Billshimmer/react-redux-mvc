@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import Counter from '../containers/Counter'
+import Counter from '../containers/Counter';
 import Todo from '../containers/Todo';
 import Nav from '../containers/Nav';
 
@@ -20,4 +20,4 @@ class Routers extends Component {
     }
 }
 
-export default Routers
+export default Routers;

@@ -8,6 +8,7 @@ class Counter extends Component {
     componentDidMount() {
         // 一般通过context的方法来拿store 最顶层有一个Prodiver组件来提供store
         let store = this.context.store;
+        store.dispatch({ type: 'INCREMENT', value: 1 });
     }
 
     render() {
