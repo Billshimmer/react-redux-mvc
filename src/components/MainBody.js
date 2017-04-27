@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
 export default class MainBody extends Component {
     static propTypes = {
         todos: PropTypes.array.isRequired,
@@ -24,7 +25,11 @@ export default class MainBody extends Component {
                         return (
                             <div key={item.id}>
                                 <span>{item.text}</span>
-                                <button style={{marginLeft: '20px'}} onClick={()=>this.onDelete(item.id)}>删除</button>
+                                <button 
+                                    style={{marginLeft: '20px'}} 
+                                    onClick={()=>this.onDelete(item.id)}>
+                                    删除
+                                </button>
                             </div>
                         )
                     }) 
