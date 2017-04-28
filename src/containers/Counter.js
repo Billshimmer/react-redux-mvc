@@ -6,7 +6,7 @@ import * as CounterActions from '../actions/counterActions';
 
 class Counter extends Component {
     componentDidMount() {
-        // 一般通过context的方法来拿store 最顶层有一个Prodiver组件来提供store
+        // 通过context的方法来拿store 最顶层有一个Prodiver组件来提供store
         let store = this.context.store;
         store.dispatch({ type: 'INCREMENT', value: 1 });
     }
